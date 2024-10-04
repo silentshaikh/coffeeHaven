@@ -1,5 +1,5 @@
 "use client";
-import { Pacifico,Poppins} from '@next/font/google';
+import { Pacifico} from '@next/font/google';
 import ServiceCard from '../ServiceCard/ServiceCard';
 const pacific = Pacifico({
     weight: '400', 

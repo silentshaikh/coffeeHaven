@@ -7,7 +7,7 @@ const pacific = Pacifico({
 function AboutHero() {
   return (
     <section className='abouthero'>
-        <h1 className={`text-center ${pacific.className} relative top-48 text-[#c29469] text-5xl`}>LET'S KNOW ABOUT US</h1>
+        <h1 className={`text-center ${pacific.className} relative top-48 text-[#c29469] text-5xl`}>LET &apos;S KNOW ABOUT US</h1>
     </section>
   )
 }
