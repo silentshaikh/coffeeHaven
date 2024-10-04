@@ -1,4 +1,4 @@
-import { Sofadi_One ,Pacifico,Poppins} from '@next/font/google';
+import {Pacifico} from '@next/font/google';
 import FootIcon from '../FootIcon/FootIcon';
 const pacific = Pacifico({
     weight: '400', 

@@ -7,7 +7,7 @@ const poppins = Poppins({
     subsets: ['latin'], 
     display: 'swap', 
   });
-function ProductButton({name,button}:{name:string,button:string}) {
+function ProductButton({button}:{button:string}) {
   return (
     <>
     <Link href='/cart'>

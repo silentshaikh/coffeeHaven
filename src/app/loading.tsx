@@ -1,5 +1,5 @@
 
-import { Sofadi_One ,Pacifico,Poppins} from '@next/font/google';
+import {Pacifico} from '@next/font/google';
 const pacific = Pacifico({
     weight: '400', 
     subsets: ['latin'], 

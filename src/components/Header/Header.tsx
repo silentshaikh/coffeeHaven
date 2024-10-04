@@ -2,7 +2,7 @@
 import React from 'react'
 import Logo from '../Logo/Logo'
 import Navbar from '../Navbar/Navbar'
-import {Pacifico, Teko} from "@next/font/google"
+import {Pacifico} from "@next/font/google"
 import HeadIcon from '../HeadIcon/HeadIcon';
 const pacific = Pacifico({
   weight: ['400'], 

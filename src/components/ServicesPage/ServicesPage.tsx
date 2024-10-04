@@ -1,16 +1,12 @@
 "use client";
-import { Sofadi_One ,Pacifico,Poppins} from '@next/font/google';
+import { Pacifico,Poppins} from '@next/font/google';
 import ServiceCard from '../ServiceCard/ServiceCard';
 const pacific = Pacifico({
     weight: '400', 
     subsets: ['latin'], 
     display: 'swap', 
   });
-  const poppins = Poppins({
-    weight: '400', 
-    subsets: ['latin'], 
-    display: 'swap', 
-  });
+  
 function ServicesPage() {
   return (
     <section className='bg-[#9e7045] flex justify-center items-center flex-col py-10'>

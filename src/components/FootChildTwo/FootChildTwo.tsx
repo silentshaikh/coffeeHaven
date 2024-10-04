@@ -1,5 +1,5 @@
 import { addressFoot } from '@/utils/helper'
-import { Sofadi_One ,Pacifico,Poppins} from '@next/font/google';
+import { Pacifico,Poppins} from '@next/font/google';
 const pacific = Pacifico({
     weight: '400', 
     subsets: ['latin'], 

@@ -10,7 +10,7 @@ const poppins = Teko({
 function ServicesName({name}:SerName) {
   return (
     <>
-     <h3 className={`pt-5 ${poppins.className} text-xl`}>Equipment</h3> 
+     <h3 className={`pt-5 ${poppins.className} text-xl`}>{name}</h3> 
     </>
   )
 }

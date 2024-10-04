@@ -1,5 +1,5 @@
 "use client";
-import { Pacifico , Poppins} from '@next/font/google';
+import { Pacifico} from '@next/font/google';
 import SubscriptionContent from '../SubscriptionContent/SubscriptionContent';
 import SubscriptForm from '../SubscriptForm/SubscriptForm';
 const pacific = Pacifico({

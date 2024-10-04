@@ -1,5 +1,5 @@
 import React from 'react'
-import { Pacifico , Teko} from '@next/font/google';
+import { Pacifico } from '@next/font/google';
 const pacific = Pacifico({
   weight: '400', 
   subsets: ['latin'], 
