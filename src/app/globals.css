@@ -2,26 +2,250 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+.footer{
+  background-image: url(../../public/images/3d-background-international-coffee-day_23-2150674861.jpeg);
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+.foot-sec{
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.copyright{
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.header{
+  max-width: calc(100% - 128px);
+}
+@media only screen and (max-width:570px) {
+  .navlist{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .header{
+    max-width: 95vw;
+  }
+}
+@media only screen and (max-width:480px) {
+  .footer{
+    height: 75vh;
+  }
+}
+@media only screen and (max-width:380px) {
+  .footer{
+    height: 90vh;
+  }
+}
+
+/* Product */
+
+.heroproduct{
+  background-image: url(../../public/images/3d-background-coffee-shop_23-2150817350.avif);
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-color: #E3CC9A;
+  background-blend-mode: screen;
+}
+.product{
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.flip-container {
+  perspective: 1000px; 
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-container:hover .flip-inner {
+  transform: rotateY(180deg); 
+}
+
+.flip-front,
+.flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; 
+}
+
+.flip-front {
+  z-index: 2; 
+}
+
+.flip-back {
+  transform: rotateY(180deg); 
+}
+
+
+/* About */
+.abouthero{
+  background-image: url(../../public/images/coffee-still-life-background_23-2150625556.avif);
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-color: #c0a363;
+  background-blend-mode: screen;
+}
+
+.contacthero{
+  background-image: url(../../public/images/3d-background-international-coffee-day_23-2150674869.jpeg);
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-color: #c0a363;
+  background-blend-mode: screen;
+}
+.textrea{
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+}
+.cont-input{
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+}
+
+/* Loading */
+.loading {
+  
+  animation: loading 3s infinite ease-in-out;
+}
+
+@keyframes loading {
+  0% {
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(0.5);
+  }
+}
+
+
+
+/* Swiper */
+
+.swiper {
+  width: 50vw;
+ 
+}
+
+
+ .swiper-slide:nth-child(1n) {
+  background-color:#ddbe88 ;
+  border: 2px solid #EECD96;
+}
+
+.swiper-slide:nth-child(2n) {
+  background-color: #fcd89b;
+  border: 2px solid #EECD96;
+}
+
+.swiper-slide:nth-child(3n) {
+  background-color: #EECD96;
+  border: 2px solid #EECD96;
+}
+
+.swiper-slide:nth-child(4n) {
+  background-color: #ecc889;
+  border: 2px solid #EECD96;
+}
+
+.testimonial img {
+  width: 28%;
+  height: auto;
+}
+@media only screen and (max-width:500px) {
+  .testimonial img{
+    width: 50%;
+  }
+}
+@media (min-width: 640px) {
+  .testimonial img {
+    width: 32%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .testimonial img {
+    width: 36%;
+  }
+}
+
+.testimonial h4 {
+  font-size: 1.25rem; 
+}
+
+@media (min-width: 640px) {
+  .testimonial h4 {
+    font-size: 1.5rem; 
+  }
+}
+
+@media (min-width: 1024px) {
+  .testimonial h4 {
+    font-size: 2rem; 
+  }
+}
+
+.testimonial p {
+  width: 80%;
+}
+
+@media (min-width: 640px) {
+  .testimonial p {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .testimonial p {
+    width: 50%;
   }
 }
